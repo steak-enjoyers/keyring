@@ -1,13 +1,13 @@
+mod cli;
 mod error;
 mod key;
 mod keyring;
 mod print;
 mod prompt;
-mod subcommand;
 
 pub use crate::{
+    cli::KeysSubcmd,
     error::KeyringError,
     key::Key,
     keyring::Keyring,
-    subcommand::KeysSubcmd,
 };
