@@ -1,5 +1,6 @@
 use std::io;
 
+#[cfg(feature = "cli")]
 pub(crate) fn input(prompt: impl Into<String>) -> io::Result<String> {
     dialoguer::Input::new()
         .with_prompt(prompt)

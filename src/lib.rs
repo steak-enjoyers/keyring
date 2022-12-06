@@ -1,13 +1,12 @@
+#[cfg(feature = "cli")]
 mod cli;
 mod error;
 mod key;
 mod keyring;
+#[cfg(feature = "cli")]
 mod print;
 mod prompt;
 
-pub use crate::{
-    cli::KeysSubcmd,
-    error::KeyringError,
-    key::Key,
-    keyring::Keyring,
-};
+#[cfg(feature = "cli")]
+pub use crate::cli::KeysSubcmd;
+pub use crate::{error::KeyringError, key::Key, keyring::Keyring};
