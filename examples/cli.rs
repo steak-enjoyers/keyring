@@ -1,8 +1,8 @@
 use std::path::PathBuf;
 
 use clap::Parser;
-
 use home::home_dir;
+
 use keyring::KeysSubcmd;
 
 #[derive(Parser)]
