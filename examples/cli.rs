@@ -11,7 +11,7 @@ pub struct Cli {
     #[command(subcommand)]
     pub subcommand: KeysSubcmd,
 
-    /// The directory where encrypted key files are stored
+    /// The directory where encrypted key files are stored. Default: ~/.keyring
     #[arg(long)]
     pub dir: Option<PathBuf>,
 }
