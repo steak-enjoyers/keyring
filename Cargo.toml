@@ -11,8 +11,8 @@ repository    = "https://github.com/steak-enjoyers/keyring"
 documentation = "https://github.com/steak-enjoyers/keyring#README"
 keywords      = []
 
-[[bin]]
-name = "keyring"
+[[example]]
+name = "cli"
 
 [dependencies]
 bcrypt     = "0.13"
