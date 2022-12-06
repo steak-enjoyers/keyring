@@ -30,6 +30,7 @@ fn main() {
             .join(".keyring")
     });
 
+    // run subcommand. panic on errors
     subcommand.run(dir).unwrap_or_else(|err| {
         panic!("{err}");
     });
