@@ -1,14 +1,30 @@
 [package]
-name          = "rust-template"
-description   = "Template for single-crate Rust projects"
-version       = "0.0.0"
+name          = "keyring"
+description   = "File-based keyring application for secp256k1 private keys"
+version       = "0.1.0"
 authors       = ["Larry Engineer <gm@larry.engineer>"]
 edition       = "2021"
 rust-version  = "1.65"
 license       = "UNLICENSED"
 homepage      = "https://larry.engineer"
-repository    = "https://github.com/steak-enjoyers/rust-template"
-documentation = "https://github.com/steak-enjoyers/rust-template#README"
-keywords      = ["template"]
+repository    = "https://github.com/steak-enjoyers/keyring"
+documentation = "https://github.com/steak-enjoyers/keyring#README"
+keywords      = []
+
+[[bin]]
+name = "keyring"
 
 [dependencies]
+bcrypt     = "0.13"
+bip32      = "0.4"
+clap       = { version = "4", features = ["derive"] }
+colored    = "2"
+dialoguer  = "0.10"
+hex        = "0.4"
+home       = "0.5"
+josekit    = "0.8"
+k256       = "0.11"
+rand       = "0.8"
+serde      = "1"
+serde_json = "1"
+thiserror  = "1"
