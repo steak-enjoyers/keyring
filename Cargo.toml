@@ -9,7 +9,7 @@ license       = "UNLICENSED"
 homepage      = "https://larry.engineer"
 repository    = "https://github.com/steak-enjoyers/keyring"
 documentation = "https://github.com/steak-enjoyers/keyring#README"
-keywords      = []
+keywords      = ["crypto", "key-management"]
 
 [[example]]
 name = "cli"
